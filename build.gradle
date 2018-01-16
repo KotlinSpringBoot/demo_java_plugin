@@ -1,0 +1,17 @@
+group 'com.easy.springboot'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'com.easy.springboot.demo_java_plugin.HelloWorld'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
